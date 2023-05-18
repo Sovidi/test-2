@@ -1,8 +1,21 @@
-.wrap{
-    width: 1750;
-    border:5px solid #f00
+
+.top-menu{
+    width: 1750px;
+    text-align: right;
+    margin: 40px 600px 40px 0px;
+    font-size: 40px;
 };
 
-.wrap img{
-    width:100%;
+
+.inner-text-box{
+    position: absolute;
+    width: 190;
+    height: 36;
+    top: 156;
+    left: 381;
+    font-size: 30px
+};
+
+.inner-text-box #readme{
+    font-size: 3px;
 };
