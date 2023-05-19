@@ -7,4 +7,4 @@ function clockAct() {
     clock.innerText = `${hours}:${minute}`
 };
 
-setInterval((item) => {clockAct}, 1000);
+setInterval(clockAct, 1000);

@@ -1,6 +1,6 @@
-const todoForm = document.querySelector(".todo-form");
-const todoInput = document.querySelector(".todo-form input");
-const todoList = document.querySelector(".todo-list");
+const todoForm = document.querySelector("#todo-form");
+const todoInput = document.querySelector("#todo-form input");
+const todoList = document.querySelector("#todo-list");
 
 
 
@@ -20,7 +20,8 @@ function saveTodo() {
 localStorage.setItem(TODOS_KEY, JSON.stringify(todos));
 };
 
-
+const imojis = ["😊", "😁", "😂", "🤣", "😒"];
+const chosenImojis = imojis[Math.floor(Math.random * imojis.length)];
 
 function paintTodo(wroteNameObj) {
     const li = document.createElement("li");
@@ -29,6 +30,7 @@ function paintTodo(wroteNameObj) {
     span.innerText = wroteNameObj.text;
     const button = document.createElement("button");
     button.addEventListener("click", deleteTodos);
+    button.innerText = chosenImojis;
     li.appendChild(span);
     li.appendChild(button);
     todoList.appendChild(li);
@@ -43,8 +45,10 @@ const wroteNameObj = {
     text: wroteName,
     id: Date.now(),
 };
+todoInput.value = "";
 paintTodo(wroteNameObj);
 todos.push(wroteNameObj);
+saveTodo();
 };
 
 
@@ -53,6 +57,6 @@ todoForm.addEventListener("submit", todoSubmit);
 
 const parsedTodos = JSON.parse(localStorage.getItem("todos"));
 if(parsedTodos !== null) {
-    parsedTodos.forEach((item) => paintTodo);
+    parsedTodos.forEach(paintTodo);
     todos = parsedTodos;
 };

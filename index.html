@@ -8,35 +8,35 @@
     <link rel="stylesheet" href="test.css">
 </head>
 <body>
-    
-<div class="wrap">
+    <form id="todo-form">
+        <input required max="15" type="text" >
+    </form>
+    <ul id="todo-list"></ul>
+
     <div class="top-menu">
         <a href="#">HOME</a>
         <a href="#">BEST PLACES</a>
         <a href="#">DESTINATIONS</a>
         <a href="#">TRAVEL TIPS</a>
     </div>
-    
-        <div class="inner-text-box">
-        <b>Why you should go for a trip...</b>
-        <p>Traveling is Easier
-            than You think.</p>
-            <a href="#">read me</a>
-    </div>
 
+
+
+
+    <p class="intro">
+    <img src="./imgs/IMG_Intro.jpg">
+    </p>
     <style>
-        .inner-text-box{
-            background-color: antiquewhite;
-            display: inline;
-            margin
+        .intro > img{
+            width: 1750px;
         }
     </style>
-    <div>
-    <img src="./imgs/IMG_Intro.jpg">
-    </div>
+
+
+
 
     <div class="text-1">
-        <b>World's hottest destinations for vegans</b>
+        <h2>World's hottest destinations for vegans</h2>
         <p>Europe national glove hotsposts hiking miles sleep Turkey
             international Tripit paris. Amsterdam national earth flexi
             billity vus diary tour peratior uncharted maps Europe.
@@ -48,46 +48,96 @@
     <style>
         .text-1{
             width: 1750px;
-            text-align: left;
         }
-        .text-1 > b{
-            margin: 140px 0px 110px 0px;
-            font-size: 66px;
+        .text-1 > h2{
+            width: 1750px;
+            margin: 80px auto;
+            font-size: 56px;
+            text-align: center;
         }
         .text-1 > p{
-            width: 1100px;
-            margin: 90px 0px 110px 0px;
+            margin: 110px auto;
             font-size: 34px;
             line-height: 1.5;
+            text-align: center;
         }
         .text-1 > a{
-            font-size: 36px;
-            padding: 30px;
-            margin: 0px;
+            font-size: 34px;
+            padding: 20px;
+            margin: 130px 0px;
             background-color: aquamarine;
             display: inline;
             border-radius: 30px;
         }
     </style>
 
-    <div class="text-2">
-        <p><img src="./imgs/IMG_Trees 2.jpg" alt=""></p>
+
+
+
+    <div class="text-2" style="white-space: pre-line;">
+        <p><img src="./imgs/IMG_Trees 1.jpg"  alt=""></p>
         <div>
-            <b>An Amazing Journey 
-            Through The Mountains.</b>
-            <p>Europe national glove hotsposts hiking miles sleep Turkey
+            <b>An Amazing Journey Through The Mountains.</b>
+            <p>Europe national glove hotsposts hiking miles sleep Turkey 
+
             international Tripit paris. Amsterdam national earth flexi
+
             billity vus diary tour peratior uncharted maps Europe.
-            Guide frequent flyuer yacht miles chartering miles.
-            </p></div>
-        
+
+            Guide frequent flyuer yacht miles chartering miles.</p>
+        </div>
+            
     </div>
 
     <style>
         .text-2{
             display: flex;
+            margin: 180px 130px;
+            align-items: center;
+            width: 1750px;
+            }
+        .text-2 div b{
+            font-size: 50px;
+            width: 800px;
+            }
+        .text-2 div p{
+            font-size: 34px;
+            width: 700px;
+            line-height: 40px;
         }
 
+    </style>
+
+
+
+
+
+
+    <div class="text-3">
+        <p><img src="./imgs/IMG_Trees 2.jpg" alt=""></p>
+        <div>
+            <p>Europe national glove hotsposts hiking miles sleep Turkey
+                international Tripit paris. Amsterdam national earth flexi
+                billity vus diary tour peratior uncharted maps Europe.
+                Guide frequent flyuer yacht miles chartering miles.
+                </p>
+            <span>Europe national glove hotsposts hiking miles sleep Turkey
+                international Tripitparis.</s>
+        </div>
+    </div>
+    <style>
+        .text-3{
+            width: 1750px;
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+        }
+        .text-3 div p{
+            font-size: 34px;
+        }
+        .text-3 div span{
+            font-size: 34px;
+        }
     </style>
 
 

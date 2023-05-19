@@ -7,130 +7,124 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="visual">
-        <img src="../imgs/IMG_Intro.jpg" alt="gg" title="gg">
+    <h1 class="title">컨텐츠 나누기</h1>
+
+    <div class="flex between">
+        <div>01</div>
+        <div>02</div>
+        <div>03</div>
     </div>
 
-    <style>
-        .visual{
-            width: 1750px;
-            margin: 0px auto;
-        }
-        .visual > img{
-            width: 100%;
-        }
-    </style>
-
-    <div class="text-box">
-        <h2>dfdf</h2>
-
-        <p>fdfdfddf</p>
-
-        <a href="#">dfdfdf</a>
+    <div class="flex aroud">
+        <div>01</div>
+        <div>02</div>
+        <div>03</div>
     </div>
 
+    <div class="flex evenly">
+        <div>01</div>
+        <div>02</div>
+        <div>03</div>
+    </div>
+
+    <div class="flex start">
+        <div>01</div>
+        <div>02</div>
+        <div>03</div>
+    </div>
+
+
+    <div class="flex center">
+        <div>01</div>
+        <div>02</div>
+        <div>03</div>
+    </div>
+
+    <div class="flex end">
+        <div>01</div>
+        <div>02</div>
+        <div>03</div>
+    </div>
+
+    <div class="flex wrap between hei">
+        <div>01</div>
+        <div>02</div>
+        <div>03</div>
+        <div>04</div>
+        <div>05</div>
+        <div>06</div>
+    </div>
+
+    <div class="flex wrap between hei h-between">
+        <div>01</div>
+        <div>02</div>
+        <div>03</div>
+        <div>04</div>
+        <div>05</div>
+        <div>06</div>
+    </div>
+
+    <div class="flex hei center h-center">
+        <div>01</div>
+        <div>02</div>
+        <div>03</div>
+        <div>04</div>
+        <div>01</div>
+        <div>01</div>
+    </div>
+
+
+    div
+
+
+
     <style>
-        .text-box{
-            width: 80px;
-            margin: 0px 0px 0px 1300px;
-            background-color: bisque;
+        .title{
             text-align: center;
         }
-        .text-box > h2{
-            text-align: right;
-            margin: 0px 3px 0px 0px;
-        }
-    </style>
-
-    <div class="three-imgs">
-        <img src="../imgs/IMG_1.jpg" alt="">
-        <img src="../imgs/IMG_2.jpg" alt="">
-        <img src="../imgs/IMG_3.jpg" alt="">
-    </div>
-    <style>
-        .three-imgs{
+        .flex{
             width: 900px;
-            margin: 0px auto;
-
+            margin: 100px auto;
+            border: 1px solid #000;
+            background-color: rgb(255, 0, 0);
+            display: flex;
         }
+        .flex > div{
+            width: 30%;
+            height: 200px;
+            background-color: #4400ff;
+        }
+        .j-between{
+            justify-content: space-between;
+        }
+        .j-aroud{
+            justify-content: space-around;
+        }
+        .j-evenly{
+            justify-content: space-evenly;
+        }
+        .j-start{
+            justify-content: start;
+        }
+        .j-center{
+            justify-content: center;
+        }
+        .end{
+            justify-content: end;
+        }
+        .wrap{
+            flex-wrap: wrap;
+        }
+        .hei{
+            height: 600px;
+        }
+        .h-between{
+            align-content: space-between;
+        }
+        .h-center{
+            align-items: center;;
+        }
+
     </style>
-
-    <div class="first-text">
-        <b>
-            An Amazing Journey 
-            Through The Mountains.
-        </b>
-        <p>
-            Europe national glove hotsposts hiking miles sleep Turkey
-            international Tripit paris. Amsterdam national earth flexi
-            billity vus diary tour peratior uncharted maps Europe.
-            Guide frequent flyuer yacht miles chartering miles.
-        </p>
-        <a href="#">read me</a>
-    </div>
-    <style>
-        .first-text{
-            width: 1750px;
-            margin: 130px auto 110px auto;
-            text-align: center;
-
-        }
-        .first-text > b{
-            font-size: 74px;
-        }
-        .first-text > p{
-            font-size: 36px;
-            margin: 52px 0px;
-            line-height: 43px;
-            color: rgb(255, 0, 0);
-        }
-        .first-text > a{
-            font-size: 36px;
-            margin: 0px 0px 0px 800px;
-            padding: 30px;
-            background-color: rgba(18, 18, 90, 0.075);
-            display: inline-block;
-            border-radius: 30px 0px 30px 0px;
-        }
-    </style>
-    <div class="text-2">
-        <div>
-            <p><img src="../imgs/IMG_Trees 1.jpg" alt=""></p>
-        </div>
-        <div>
-            <b>An Amazing Journey 
-            Through The Mountains.</b>
-            <p>Europe national glove hotsposts hiking miles sleep Turkey
-            </p>
-            <p>
-            international Tripit paris. Amsterdam national earth flexi
-            </p>
-            <p>billity vus diary tour peratior uncharted maps Europe.</p>
-            <p>Guide frequent flyuer yacht miles chartering miles.</p>
-        </div>
-        <style>
-            .text-2{
-                display: flex;
-                align-items: center;
-            }
-            .text-2 div p img{
-                width: 700px;
-                
-            }
-            .text-2 div b{
-                font-size: 40px;
-            }
-            .text-2 div p{
-                width: 76%;
-                font-size: 29px;
-            }
-
-
-        </style>
-    </div>
-
-
-
-
 </body>
 </html>
