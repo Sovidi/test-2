@@ -1,136 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <div class="visual">
-        <img src="../imgs/IMG_Intro.jpg" alt="gg" title="gg">
-    </div>
-
+<html>
+  <head>
     <style>
-        .visual{
-            width: 1750px;
-            margin: 0px auto;
-        }
-        .visual > img{
-            width: 100%;
-        }
+      body {
+        background-color: #000;
+        color: #fff;
+        font-family: sans-serif;
+        width: 500px;
+        height: 500px;
+        position: relative;
+        overflow: hidden;
+      }
+      
+      #box {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100px;
+        height: 100px;
+        background-color: #ff0;
+        border-radius: 50%;
+        z-index: 1;
+      }
+      
+      #box:hover {
+        background-image: -webkit-repeating-linear-gradient(-90deg, #ff0 0%, #0f0 25%, #00f 50%, #f00 75%, #ff0 100%);
+        background-image: repeating-linear-gradient(-90deg, #ff0 0%, #0f0 25%, #00f 50%, #f00 75%, #ff0 100%);
+      }
     </style>
-
-    <div class="text-box">
-        <h2>dfdf</h2>
-
-        <p>fdfdfddf</p>
-
-        <a href="#">dfdfdf</a>
-    </div>
-
-    <style>
-        .text-box{
-            width: 80px;
-            margin: 0px 0px 0px 1300px;
-            background-color: bisque;
-            text-align: center;
-        }
-        .text-box > h2{
-            text-align: right;
-            margin: 0px 3px 0px 0px;
-        }
-    </style>
-
-    <div class="three-imgs">
-        <img src="../imgs/IMG_1.jpg" alt="">
-        <img src="../imgs/IMG_2.jpg" alt="">
-        <img src="../imgs/IMG_3.jpg" alt="">
-    </div>
-    <style>
-        .three-imgs{
-            width: 900px;
-            margin: 0px auto;
-
-        }
-    </style>
-
-    <div class="first-text">
-        <b>
-            An Amazing Journey 
-            Through The Mountains.
-        </b>
-        <p>
-            Europe national glove hotsposts hiking miles sleep Turkey
-            international Tripit paris. Amsterdam national earth flexi
-            billity vus diary tour peratior uncharted maps Europe.
-            Guide frequent flyuer yacht miles chartering miles.
-        </p>
-        <a href="#">read me</a>
-    </div>
-    <style>
-        .first-text{
-            width: 1750px;
-            margin: 130px auto 110px auto;
-            text-align: center;
-
-        }
-        .first-text > b{
-            font-size: 74px;
-        }
-        .first-text > p{
-            font-size: 36px;
-            margin: 52px 0px;
-            line-height: 43px;
-            color: rgb(255, 0, 0);
-        }
-        .first-text > a{
-            font-size: 36px;
-            margin: 0px 0px 0px 800px;
-            padding: 30px;
-            background-color: rgba(18, 18, 90, 0.075);
-            display: inline-block;
-            border-radius: 30px 0px 30px 0px;
-        }
-    </style>
-    <div class="text-2">
-        <div>
-            <p><img src="../imgs/IMG_Trees 1.jpg" alt=""></p>
-        </div>
-        <div>
-            <b>An Amazing Journey 
-            Through The Mountains.</b>
-            <p>Europe national glove hotsposts hiking miles sleep Turkey
-            </p>
-            <p>
-            international Tripit paris. Amsterdam national earth flexi
-            </p>
-            <p>billity vus diary tour peratior uncharted maps Europe.</p>
-            <p>Guide frequent flyuer yacht miles chartering miles.</p>
-        </div>
-        <style>
-            .text-2{
-                display: flex;
-                align-items: center;
-            }
-            .text-2 div p img{
-                width: 700px;
-                
-            }
-            .text-2 div b{
-                font-size: 40px;
-            }
-            .text-2 div p{
-                width: 76%;
-                font-size: 29px;
-            }
-
-
-        </style>
-    </div>
-
-
-
-
-</body>
+  </head>
+  <body>
+    <div id="box"></div>
+  </body>
 </html>
